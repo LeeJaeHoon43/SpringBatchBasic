@@ -69,7 +69,7 @@ public class ItemReaderConfiguration {
             String age = fieldSet.readString("age");
             String address = fieldSet.readString("address");
 
-            return new Person(id, age, age, address);
+            return new Person(id, name, age, address);
         });
 
         FlatFileItemReader<Person> itemReader = new FlatFileItemReaderBuilder<Person>()
